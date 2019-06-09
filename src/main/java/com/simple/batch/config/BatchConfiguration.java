@@ -1,7 +1,8 @@
-package com.infotech.batch.config;
+package com.simple.batch.config;
 
 import javax.sql.DataSource;
 
+import com.simple.batch.listener.JobCompletionNotificationListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -19,9 +20,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 
-import com.infotech.batch.listener.JobCompletionNotificationListener;
-import com.infotech.batch.model.Person;
-import com.infotech.batch.processor.PersonItemProcessor;
+import com.simple.batch.model.Person;
+import com.simple.batch.processor.PersonItemProcessor;
 
 @Configuration
 @EnableBatchProcessing

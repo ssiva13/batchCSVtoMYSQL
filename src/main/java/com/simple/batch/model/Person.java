@@ -1,4 +1,4 @@
-package com.infotech.batch.model;
+package com.simple.batch.model;
 
 import java.io.Serializable;
 
